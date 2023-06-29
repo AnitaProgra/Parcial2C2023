@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="ar.edu.unlam.SrcCode.Cumpleanios"/>
+    <fullyQualifiedTypeName name="ar.edu.unlam.SrcCode.Evento"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="ar.edu.unlam.SrcCode.Agasajado"/>
+    <fullyQualifiedTypeName name="ar.edu.unlam.SrcCode.Persona"/>
+    <fullyQualifiedTypeName name="ar.edu.unlam.SrcCode.Organizador"/>
+    <fullyQualifiedTypeName name="ar.edu.unlam.SrcCode.Casamiento"/>
+    <fullyQualifiedTypeName name="ar.edu.unlam.SrcCode.Invitado"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="ar.edu.unlam.SrcCode.NoEstaInvitadoException"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,12 @@
+package ar.edu.unlam.SrcCode;
+
+public class Agasajado extends Persona {
+
+	public Agasajado(String nombre, String email) {
+		super(nombre, email);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

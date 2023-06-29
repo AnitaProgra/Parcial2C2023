@@ -1,0 +1,47 @@
+package ar.edu.unlam.SrcCode;
+
+import java.util.HashSet;
+
+public class Evento {
+
+	protected String nombreEvento;
+	protected HashSet<Persona> listaInvitados;
+	protected Integer cantidadInvitados;
+	
+	
+	public Evento(String nombreEvento, Integer cantidadInvitados) {
+		super();
+		this.nombreEvento = nombreEvento;
+		this.cantidadInvitados = cantidadInvitados;
+		this.listaInvitados= new HashSet<>(); 
+	}
+
+
+	public String getNombreEvento() {
+		return nombreEvento;
+	}
+
+
+	public void setNombreEvento(String nombreEvento) {
+		this.nombreEvento = nombreEvento;
+	}
+
+
+	public HashSet<Persona> getListaInvitados() {
+		return listaInvitados;
+	}
+
+
+	public abstract void setListaInvitados(HashSet<Persona> listaInvitados);
+
+
+	public abstract Integer getCantidadInvitados();
+
+	public void setCantidadInvitados(Integer cantidadInvitados) {
+		this.cantidadInvitados = cantidadInvitados;
+	} 
+
+	
+	
+	
+}

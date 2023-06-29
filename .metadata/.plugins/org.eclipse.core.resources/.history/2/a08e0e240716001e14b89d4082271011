@@ -1,0 +1,70 @@
+package ar.edu.unlam.SrcCode;
+
+import java.util.HashSet;
+
+public class Casamiento extends Evento implements VerificacionInvitados{
+	
+	protected HashSet<Agasajado> novios;
+	
+	public Casamiento(String nombreEvento, Integer cantidadInvitados, Integer idEvento) {
+		super(nombreEvento, cantidadInvitados, idEvento);
+		this.novios= new HashSet<>();
+	}
+
+	
+
+	@Override
+	public String getNombreEvento() {
+		return nombreEvento;
+	}
+
+	@Override
+	public void setNombreEvento(String nombreEvento) {
+		this.nombreEvento= nombreEvento; 
+		
+	}
+
+	@Override
+	public HashSet<Invitado> getListaInvitados() {
+		return listaInvitados; 
+	}
+
+
+	
+	@Override
+	public void setListaInvitados(HashSet<Invitado> listaInvitados) {
+		this.listaInvitados= listaInvitados; 
+		
+	}
+
+	@Override
+	public Integer getCantidadInvitados() {
+		return listaInvitados.size(); 
+	}
+
+	@Override
+	public void setCantidadInvitados(Integer cantidadInvitados) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean verificarListayLimiteDeInvitados(Evento evento) throws CantidadInvitadosExcedidosException{
+		try {
+			for(Invitado lista: listaInvitados)
+				if(listaInvitados.size()>evento.limiteInvitados) {
+					return true; 
+				}
+				else {throw new CantidadInvitadosExcedidosException("la cantidad de invitados supera al limite"); }		
+		}
+		
+		catch(CantidadInvitadosExcedidosException e) {
+			System.out.println(e.getMessage());
+			return false; 
+		}
+		return false;
+		
+		
+	} 
+
+}

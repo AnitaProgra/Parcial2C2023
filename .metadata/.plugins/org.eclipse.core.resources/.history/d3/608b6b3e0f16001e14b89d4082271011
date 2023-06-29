@@ -1,0 +1,42 @@
+package ar.edu.unlam.SrcCode;
+
+import java.util.HashSet;
+
+public class Invitado extends Persona{
+
+	protected HashSet<Evento> misEventos; 
+	
+	public Invitado(String nombre, String email) {
+		super(nombre, email);
+		this.misEventos= new HashSet<>(); 
+	}
+
+	public void agregarMisEventos(Evento evento) {
+		misEventos.add(evento); 
+	}
+	
+	
+	public Integer cantidadDeEventos(Evento evento) {
+		misEventos.add(evento); 
+	}
+	
+	public boolean confirmarMiAsistencia(Evento evento) {
+		return true; 
+	}
+	
+	public boolean confirmarMiAusencia(Evento evento) {
+		return false; 
+	}
+	
+	@Override
+	public String getNombre() {
+		return nombre;
+	}
+
+	@Override
+	public String getEmail() {
+		return email;
+	}
+
+	
+}

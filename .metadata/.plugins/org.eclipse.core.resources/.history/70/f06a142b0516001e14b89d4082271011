@@ -1,0 +1,21 @@
+package ar.edu.unlam.SrcCode;
+
+public class Invitado extends Persona{
+
+	public Invitado(String nombre, String email) {
+		super(nombre, email);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String getNombre() {
+		return nombre;
+	}
+
+	@Override
+	public String getEmail() {
+		return email;
+	}
+
+	
+}

@@ -1,0 +1,48 @@
+package ar.edu.unlam.SrcCode;
+
+import java.util.HashSet;
+
+public class Cumpleanios extends Evento {
+
+	protected Persona cumpleaniero; 
+	
+	public Cumpleanios(String nombreEvento, Integer cantidadInvitados, Integer idEvento) {
+		super(nombreEvento, cantidadInvitados, idEvento);
+		
+	}
+
+	@Override
+	public String getNombreEvento() {
+		return nombreEvento;
+	}
+
+	@Override
+	public void setNombreEvento(String nombreEvento) {
+		this.nombreEvento= nombreEvento; 
+		
+	}
+
+	@Override
+	public HashSet<Persona> getListaInvitados() {
+		return listaInvitados; 
+	}
+
+
+	
+	@Override
+	public void setListaInvitados(HashSet<Persona> listaInvitados) {
+		
+		
+	}
+
+	@Override
+	public Integer getCantidadInvitados() {
+		return listaInvitados.size(); 
+	}
+
+	@Override
+	public void setCantidadInvitados(Integer cantidadInvitados) {
+		// TODO Auto-generated method stub
+		
+	} 
+}

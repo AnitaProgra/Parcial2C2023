@@ -1,0 +1,10 @@
+package ar.edu.unlam.SrcCode;
+
+public class Evento {
+
+	protected String nombreEvento;
+	protected HashSet<Persona> listaInvitados
+	protected Integer cantidadInvitados; 
+
+	
+}

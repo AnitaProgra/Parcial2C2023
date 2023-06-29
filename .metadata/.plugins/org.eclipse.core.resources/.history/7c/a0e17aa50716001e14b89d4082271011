@@ -1,0 +1,42 @@
+package ar.edu.unlam.SrcCode;
+
+import java.util.HashSet;
+
+public class Cumpleanios extends Evento implements VerificacionInvitados {
+
+	protected Persona cumpleaniero; 
+	
+	public Cumpleanios(String nombreEvento, Integer cantidadInvitados, Integer idEvento, Persona cumpleaniero) {
+		super(nombreEvento, cantidadInvitados, idEvento);
+		this.cumpleaniero= cumpleaniero; 
+	}
+
+	@Override
+	public String getNombreEvento() {
+		return nombreEvento;
+	}
+
+	@Override
+	public void setNombreEvento(String nombreEvento) {
+		this.nombreEvento= nombreEvento; 
+		
+	}
+
+
+
+	@Override
+	public boolean verificarListayLimiteDeInvitados(Evento evento) throws CantidadInvitadosExcedidosException{
+		try {
+			for(Invitado lista: listaInvitados) {
+				if(listaInvitados.size()>evento.limiteInvitados) {
+					throw new CantidadInvitadosExcedidosException("la cantidad de invitados supera al limite"); 
+				}
+			}
+			return true;			
+		
+		}
+		catch(CantidadInvitadosExcedidosException e) {
+			System.out.println(e.getMessage());
+			return false; 
+		}
+}

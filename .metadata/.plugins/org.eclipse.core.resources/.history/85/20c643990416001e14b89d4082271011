@@ -1,0 +1,52 @@
+package ar.edu.unlam.SrcCode;
+
+import java.util.HashSet;
+
+public class Casamiento extends Evento {
+	
+	public Casamiento(String nombreEvento, Integer cantidadInvitados, Integer idEvento) {
+		super(nombreEvento, cantidadInvitados, idEvento);
+		
+	}
+
+	protected HashSet<Persona> novios;
+
+	@Override
+	public String getNombreEvento() {
+		return nombre;
+	}
+
+	@Override
+	public void setNombreEvento(String nombreEvento) {
+		this.nombreEvento= nombreEvento; 
+		
+	}
+
+	@Override
+	public HashSet<Persona> getListaInvitados() {
+		return listaInvitados; 
+	}
+
+	public Integer cantidadInvitados() {
+		return listaInvitados.size(); 
+	}
+	
+	@Override
+	public void setListaInvitados(HashSet<Persona> listaInvitados) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Integer getCantidadInvitados() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setCantidadInvitados(Integer cantidadInvitados) {
+		// TODO Auto-generated method stub
+		
+	} 
+
+}

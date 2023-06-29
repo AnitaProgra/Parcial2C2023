@@ -1,0 +1,17 @@
+package ar.edu.unlam.SrcCode;
+
+import java.util.Comparator;
+
+public class Ordenamiento implements Comparator<Persona>{
+
+	@Override
+	public int compare(Persona o1, Persona o2) {
+		String p1= o1.getEmail();
+		String p2= o2.getNombre();
+		
+		Integer p =
+	}
+
+	
+	
+}

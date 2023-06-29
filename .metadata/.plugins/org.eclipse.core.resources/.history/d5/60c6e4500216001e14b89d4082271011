@@ -1,0 +1,19 @@
+package ar.edu.unlam.SrcCode;
+
+public abstract class Persona {
+
+	protected String nombre; 
+	protected String email;
+	
+	
+	public Persona(String nombre, String email) {
+		super();
+		this.nombre = nombre;
+		this.email = email;
+	} 
+	
+	
+	public abstract String getNombre();
+	public abstract String getEmail();
+	
+}

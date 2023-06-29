@@ -1,0 +1,9 @@
+package ar.edu.unlam.SrcCode;
+
+import java.util.HashSet;
+
+public class Casamiento extends Evento {
+	
+	protected HashSet<Persona> novios; 
+
+}
